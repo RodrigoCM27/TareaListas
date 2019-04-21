@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    tools:context=".ProductActivity">
+
+    <ImageView
+        android:id="@+id/jugo"
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/background_light"
+        app:srcCompat="@drawable/frutilla" />
+
+    <LinearLayout
+        android:id="@+id/layoutNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jugo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Jugo de: "
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/jugoNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Frutilla"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutNombre"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Precio: "
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/jugoPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/unidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" Bs."
+            android:textSize="36sp" />
+    </LinearLayout>
+
+</RelativeLayout>
