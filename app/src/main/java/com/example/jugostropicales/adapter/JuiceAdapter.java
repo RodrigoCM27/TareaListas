@@ -57,7 +57,7 @@ public class JuiceAdapter extends BaseAdapter {
         Juice jugoActual = items.get(position);
         viewHolder.jugo.setImageResource(jugoActual.getImagen());
         viewHolder.jugoNombre.setText(jugoActual.getNombre());
-        viewHolder.jugoPrecio.setText(jugoActual.getPrecio());
+        viewHolder.jugoPrecio.setText(String.valueOf(jugoActual.getPrecio()));
         return vista;
     }
 

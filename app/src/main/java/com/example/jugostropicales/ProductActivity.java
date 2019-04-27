@@ -19,6 +19,7 @@ public class ProductActivity extends AppCompatActivity {
 
     private TextView jugoNombre;
     private TextView jugoPrecio;
+    private TextView jugoId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,7 @@ public class ProductActivity extends AppCompatActivity {
         jugo = findViewById(R.id.jugo);
         jugoNombre = findViewById(R.id.jugoNombre);
         jugoPrecio = findViewById(R.id.jugoPrecio);
+        jugoId = findViewById(R.id.jugoId);
     }
 
     private void receiveData() {
@@ -41,6 +43,7 @@ public class ProductActivity extends AppCompatActivity {
         Juice juice = new Gson().fromJson(json, Juice.class);
         jugo.setImageResource(juice.getImagen());
         jugoNombre.setText(juice.getNombre());
-        jugoPrecio.setText(juice.getPrecio());
+        jugoPrecio.setText(String.valueOf(juice.getPrecio()));
+        jugoId.setText(String.valueOf(juice.getId()));
     }
 }

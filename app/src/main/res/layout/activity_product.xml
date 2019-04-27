@@ -9,10 +9,10 @@
 
     <ImageView
         android:id="@+id/jugo"
-        android:layout_width="350dp"
-        android:layout_height="450dp"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:background="@android:color/background_light"
         app:srcCompat="@drawable/frutilla" />
 
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/jugo"
         android:layout_centerInParent="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:orientation="horizontal">
 
         <TextView
@@ -50,7 +50,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/layoutNombre"
         android:layout_centerInParent="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
         android:orientation="horizontal">
 
         <TextView
@@ -78,4 +79,24 @@
             android:textSize="36sp" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layoutPrecio"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jugo numero: "
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/jugoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
 </RelativeLayout>
